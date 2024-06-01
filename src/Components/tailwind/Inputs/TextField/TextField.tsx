@@ -1,34 +1,4 @@
 import React from "react";
-const Colors = {
-  primary: {
-    text: "text-[#4778B3]",
-    border: "border-[#4778B3]",
-  },
-  secondary: {
-    text: "text-[#B38247]",
-    border: "border-[#B38247]",
-  },
-  info: {
-    text: "text-[#106BDA]",
-    border: "border-[#106BDA]",
-  },
-  warning: {
-    text: "text-[#FFC107]",
-    border: "border-[#FFC107]",
-  },
-  danger: {
-    text: "text-[#CE3426]",
-    border: "border-[#CE3426]",
-  },
-  success: {
-    text: "text-[#157F40]",
-    border: "border-[#157F40]",
-  },
-  neutral: {
-    text: "text-[#767676]",
-    border: "border-[#767676]",
-  },
-};
 
 type InputProps = React.InputHTMLAttributes<HTMLInputElement> & {
   label?: string;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { base64 } from "./base64";
 import styles from "./styles.module.css";
 

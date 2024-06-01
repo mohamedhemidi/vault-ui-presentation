@@ -1,4 +1,3 @@
-import React from "react";
 // import { LazyLoadImage } from 'src/Components/css-modules/LazyLoadImage'
 import { LazyLoadImage } from "../Components/css-modules/LazyLoadImage";
 

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./styles.module.css";
 import CloseIcon from "../../../assets/icons/Close";
 import variantIcon from "./toastIcon";
