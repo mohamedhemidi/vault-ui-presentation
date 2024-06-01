@@ -1,0 +1,219 @@
+:root {
+  --primary: #4778b3;
+  --secondary: #b38247;
+  --info: #106bda;
+  --warning: #ffc107;
+  --danger: #ce3426;
+  --success: #157f40;
+  --neutral: #767676;
+}
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.button.width_auto {
+  width: auto;
+}
+.button.width_small {
+  width: 8rem;
+}
+.button.width_medium {
+  width: 10rem;
+}
+.button.width_large {
+  width: 13rem;
+}
+
+
+.button a {
+  text-decoration: none;
+}
+
+.button.primary {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+.button.secondary {
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.button.info {
+  background-color: var(--info);
+  border: 2px solid var(--info);
+  color: var(--info);
+}
+.button.warning {
+  background-color: var(--warning);
+  border: 2px solid var(--warning);
+  color: var(--warning);
+}
+.button.danger {
+  background-color: var(--danger);
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+.button.success {
+  background-color: var(--success);
+  border: 2px solid var(--success);
+  color: var(--success);
+}
+.button.neutral {
+  background-color: var(--neutral);
+  border: 2px solid var(--neutral);
+  color: var(--neutral);
+}
+.button.rounded {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  padding: 0 !important;
+}
+.button.filled {
+  color: #ffffff;
+}
+.button.outlined {
+  background: transparent;
+}
+.button.shadow {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.button.ghost {
+  background: transparent;
+  border: none;
+}
+.button.disabled {
+  background-color: #e0e0e0;
+  border: none;
+}
+.button.small {
+  padding: 0.5rem 1rem;
+}
+.button.medium {
+  padding: 1rem 1rem;
+}
+.button.large {
+  padding: 1.5rem 1.5rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.button.disabled:hover {
+  opacity: 1;
+}
+.button:active {
+  opacity: 1;
+}
+.button.ghost.primary:active {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.button.ghost.secondary:active {
+  background-color: var(--secondary);
+  color: #ffffff;
+}
+.button.ghost.info:active {
+  background-color: var(--info);
+  color: #ffffff;
+}
+.button.ghost.warning:active {
+  background-color: var(--warning);
+  color: #ffffff;
+}
+.button.ghost.danger:active {
+  background-color: var(--danger);
+  color: #ffffff;
+}
+.button.ghost.success:active {
+  background-color: var(--success);
+  color: #ffffff;
+}
+.button.ghost.neutral:active {
+  background-color: var(--neutral);
+  color: #ffffff;
+}
+
+/*
+/* Handling svg and icon */
+/*
+*/
+
+.button > img,
+.button > svg {
+  fill: #ffffff;
+}
+
+.button.primary.outlined > img,
+.button.primary.ghost > img,
+.button.primary.outlined > svg,
+.button.primary.ghost > svg {
+  fill: var(--primary);
+}
+.button.secondary.outlined > img,
+.button.secondary.ghost > img,
+.button.secondary.outlined > svg,
+.button.secondary.ghost > svg {
+  fill: var(--secondary);
+}
+.button.info.outlined > img,
+.button.info.ghost > img,
+.button.info.outlined > svg,
+.button.info.ghost > svg {
+  fill: var(--info);
+}
+.button.warning.outlined > img,
+.button.warning.ghost > img,
+.button.warning.outlined > svg,
+.button.warning.ghost > svg {
+  fill: var(--warning);
+}
+.button.danger.outlined > img,
+.button.danger.ghost > img,
+.button.danger.outlined > svg,
+.button.danger.ghost > svg {
+  fill: var(--danger);
+}
+.button.success.outlined > img,
+.button.success.ghost > img,
+.button.success.outlined > svg,
+.button.success.ghost > svg {
+  fill: var(--success);
+}
+.button.neutral.outlined > img,
+.button.neutral.ghost > img,
+.button.neutral.outlined > svg,
+.button.neutral.ghost > svg {
+  fill: var(--neutral);
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #000;
+  animation: spinner 0.6s linear infinite;
+}

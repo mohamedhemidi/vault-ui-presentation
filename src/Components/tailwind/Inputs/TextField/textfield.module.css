@@ -1,0 +1,112 @@
+:root {
+  --primary: #4778b3;
+  --secondary: #b38247;
+  --info: #106bda;
+  --warning: #ffc107;
+  --danger: #ce3426;
+  --success: #157f40;
+  --neutral: #767676;
+}
+.container {
+  width: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textField {
+  border: 1px solid #dadce0;
+  padding: 0.75rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin: 0 auto;
+  outline: none;
+}
+.textField.error {
+  border: 1px solid var(--danger);
+}
+.textField:hover {
+  border: 1px solid #bababa;
+}
+.textField:focus {
+  outline: none;
+}
+.textField.error:hover {
+  border: 1px solid var(--danger);
+}
+.textField.error:focus {
+  border: 1px solid var(--danger) !important;
+}
+
+.textField.primary:focus {
+  border: 2px solid var(--primary);
+}
+.textField.secondary:focus {
+  border: 2px solid var(--secondary);
+}
+.textField.info:focus {
+  border: 2px solid var(--info);
+}
+.textField.warning:focus {
+  border: 2px solid var(--warning);
+}
+.textField.danger:focus {
+  border: 2px solid var(--danger);
+}
+.textField.success:focus {
+  border: 2px solid var(--success);
+}
+.textField.neutral:focus {
+  border: 2px solid var(--neutral);
+}
+
+.textField:not(:placeholder-shown) + label,
+.textField:focus + label {
+  top: -10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+.textField:not(:focus)::placeholder {
+  opacity: 0;
+}
+.Label {
+  position: absolute;
+  left: 0;
+  padding-left: 1rem;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s;
+  top: calc(50% + 0px);
+  transform: translateX(0px) translateY(-50%);
+}
+.textField:focus + .Label.primary  {
+  color: var(--primary);
+}
+.textField:focus + .Label.secondary  {
+  color: var(--secondary);
+}
+.textField:focus + .Label.info  {
+  color: var(--info);
+}
+.textField:focus + .Label.warning  {
+  color: var(--warning);
+}
+.textField:focus + .Label.danger  {
+  color: var(--danger);
+}
+.textField:focus + .Label.success  {
+  color: var(--success);
+}
+.textField:focus + .Label.neutral  {
+  color: var(--neutral);
+}
+.Label.error {
+  color: var(--danger) !important;
+}
+.errorMessage {
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
